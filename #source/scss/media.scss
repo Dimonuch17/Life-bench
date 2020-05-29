@@ -1,0 +1,789 @@
+@media only screen and (max-width : 1550px) {
+	.nav {
+		font-size: 16px;
+		.nav .nav-city .nav-city__desc p {
+			line-height: 2em;
+		}
+		.nav .nav-tel, .nav .nav-city {
+			width: 400px;
+		}
+		.nav-menu {
+			border-top: none;
+		}
+	}
+
+	.logo {
+		border-bottom: 1px solid #e4e4e4;
+		text-align: center;
+		width: 300px;
+	}
+
+	.pillow_hd,
+	.boots__hd,
+	.about_bg,
+	.shoes-img {
+		width: 35%;
+	}
+
+	.about .about__wrap {
+		margin-left: 130px;
+	}
+
+	.prevention .prevention-img__left {
+		top: 16%;
+	}
+
+	.prevention .prevention__wrapper .evminova-img {
+		width: 500px;
+		height: 100%;
+	}
+
+	.shoes .shoes__wrapper, .prevention .prevention__wrapper, .orthopedic .orthopedic__wrapper .orthopedic__images, .about-store .about-store__wrap, .nav {
+		justify-content: space-between;
+	}
+
+	.prevention {
+		padding-bottom: 100px;
+	}
+
+	.shoes,
+	.pillows,
+	.orthopedic,
+	.corsets {
+		padding: 100px 0;
+	}
+
+	.shoes .shoes-right-bg {
+		top: 13%;
+	}
+
+	.pillows .pallows-left_bg {
+		top: 19%;
+	}
+
+	.pallows-left_bg {
+		width: 50%;
+	}
+
+	.img__item img {
+		width: 200px;
+	}
+
+	.orthopedic .orthopedic__wrapper .orthopedic__images {
+		width: 700px;
+	}
+
+	.orthopedic .orthopedic__wrapper .orthopedic__images .img__item p {
+		font-size: 20px;
+		margin-top: 25px;
+	}
+
+	.orthopedic .orthopedic__wrapper {
+		align-items: center;
+	}
+
+	.container-fluid {
+		width: 1150px;
+	}
+
+	.pillows .pillows__wrapper .pallow-woman__firts {
+		width: 500px;
+		height: 500px;
+	}
+
+	.pillows .pillows__wrapper .pillows__wrap .pallow-woman__second {
+		width: 430px;
+		height: 330px;
+		margin-left: -10%;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	}
+
+	.pillows .pillows__wrapper {
+		justify-content: space-around;
+	}
+
+	.corsets-img__item img {
+		width: 200px;
+	}
+
+	.corsets .corsets__wrapper .corsets__images .corsets-img__item p {
+		font-size: 20px;
+		margin-top: 25px;
+	}
+
+	.contacts .contact__block {
+		right: 5%;
+	}
+	
+}
+
+
+@media only screen and (max-width : 1200px) {
+	.container,
+	.container-fluid	{
+		width: 970px;
+	}
+
+	.header__screen .offer h1 {
+		font-size: 43px;
+		line-height: 1.3em;
+	}
+
+	.header__screen .boots__hd {
+		position: absolute;
+		left: 0%;
+		top: 29%;
+	}
+
+	.about {
+		padding: 100px 0; 
+	}
+
+	.img__item img,
+	.corsets-img__item img {
+		width: 160px;
+	}
+
+	.orthopedic .orthopedic__wrapper .orthopedic__images .img__item p,
+	.corsets .corsets__wrapper .corsets__images .corsets-img__item p {
+		font-size: 17px;
+		margin-top: 20px;
+	}
+
+	.pillows .pillows__wrapper .pillows__wrap .title p, .corsets .corsets__wrapper .corsets__wrap .title p, .shoes .shoes__wrapper .shoes__wrap .title p, .prevention .prevention__wrapper .prevention__wrap .title p, .orthopedic .orthopedic__wrapper .orthopedic__wrap .title p, .about .title p {
+		font-size: 22px; 
+	}
+
+	.pillows .pillows__wrapper .pillows__wrap .title h2, .corsets .corsets__wrapper .corsets__wrap .title h2, .shoes .shoes__wrapper .shoes__wrap .title h2, .prevention .prevention__wrapper .prevention__wrap .title h2, .orthopedic .orthopedic__wrapper .orthopedic__wrap .title h2, .about .title h2 {
+		font-size: 34px;
+	}
+
+	.orthopedic .orthopedic__wrapper .orthopedic__images {
+		width: 500px;
+	}
+
+	.orthopedic__wrapper {
+		justify-content: center;
+	}
+
+	.prevention .prevention__wrapper .evminova-img {
+		width: 450px;
+	}
+
+	.shoes .shoes__wrapper, {
+		justify-content: center;
+	}
+
+	.shoes-img {
+		width: 40%;
+	}
+
+	.corsets .corsets__wrapper .corsets__images .corsets-img__item {
+		margin-right: 15px;
+	}
+
+	.pillows .pillows__wrapper .pallow-woman__firts {
+		width: 400px;
+		height: 400px;
+	}
+
+	.pillows .pillows__wrapper .pillows__wrap .pillows__text {
+		width: 500px;
+	}
+
+	.pallows-left_bg {
+		width: 55%;
+	}
+
+	.contacts .contact__block {
+		width: 500px;
+	}
+
+}
+
+
+@media only screen and (max-width : 992px) {
+	.container,
+	.container-fluid {
+		width: 720px;
+	}
+
+	.nav .nav-tel, .nav .nav-city {
+		width: 33.3%;
+	}
+
+	.nav .nav-city .nav-city__desc p {
+		line-height: 1.4em;
+	}
+
+	.nav .nav-city .nav-city__desc i,
+	.nav .nav-tel .nav-tel__desc i {
+		padding: 0 15px;
+	}
+
+	.nav {
+		font-size: 14px;
+	}
+
+	.logo {
+		border-bottom: none;
+		&:after {
+			content: ' ';
+			display: block;
+			border-bottom: 1px solid #e4e4e4;
+			width: 250px;
+			margin: 0 auto;
+		}
+	}
+
+	.header__screen .pillow_hd,
+	.header__screen .boots__hd {
+		top: 38%;
+	}
+
+	.about .about__text {
+		width: 450px;
+	}
+	
+	.about-store .about-store__wrap .about-store__item p {
+		font-size: 18px;
+		line-height: 1.4em;
+	}
+
+	.orthopedic__wrapper,
+	.prevention__wrapper,
+	.shoes__wrapper,
+	.corsets__wrapper {
+		flex-direction: column;
+	}
+
+	.orthopedic__wrap {
+		order: 1;
+	}
+
+	.img__item img, .corsets-img__item img {
+		width: 200px;
+	}
+
+	.orthopedic .orthopedic__wrapper .orthopedic__images {
+		width: 650px;
+	}
+
+	.orthopedic .orto-bg {
+		top: 50%;
+	}
+
+	.orthopedic__images {
+		margin-bottom: 60px;
+	}
+
+	.orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__text {
+		margin-top: 45px;
+	}
+
+	.orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__text p {
+		margin-bottom: 30px;
+	}
+
+	.orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__btn {
+		margin-top: 50px;
+	}
+
+	.prevention,
+	.shoes {
+		padding: 50px 0;
+	}
+
+	.prevention .prevention-img__left {
+		top: 10%;
+	}
+
+	.prevention-img__left {
+		display: none;
+	}
+
+	.prevention .prevention__wrapper .evminova-img {
+		width: 500px;
+		margin-bottom: 60px;
+	}
+
+	.prevention .prevention__wrapper .prevention__wrap {
+		margin-right: 0;
+	}
+
+	.prevention .prevention__wrapper .prevention__wrap .prevention__text {
+		margin: 50px 0; 
+	}
+
+	.shoes__wrap {
+		order: 1;
+	}
+
+	.shoes-img {
+		width: 50%;
+	}
+
+	.shoes-img {
+		margin-bottom: 60px;
+	}
+
+	.shoes-right-bg {
+		width: 60%;
+	}
+
+	.shoes .shoes__wrapper .shoes__wrap .shoes__text {
+		margin: 50px 0;
+	}
+
+	.prevention .prophy_bg {
+		top: 46%;
+	}
+
+	.shoes .shoes-left-bg {
+		top: 40%;
+	}
+
+	.corsets__wrap {
+		order: 1;
+	}
+
+	.corsets .corsets__wrapper .corsets__images {
+		justify-content: space-between;
+		margin-bottom: 60px;
+	}
+
+	.corsets .carset-bg {
+		top: 45%;
+		left: 50%;
+	}
+
+	.pallows-left_bg,
+	.pallow-woman__firts {
+		display: none;
+	}
+
+	.pillows .pallows-right_bg {
+		top: 50%;
+	}
+
+	.footer .footer__desc {
+		width: 100%;
+	}
+
+	.footer__desc p {
+		font-size: 18px;
+	}
+
+	.footer .footer__desc {
+		line-height: 1.4em;
+	}
+
+}
+
+
+@media only screen and (max-width : 768px) {
+	.container, .container-fluid {
+		width: 520px;
+	}
+
+	.header {
+		.container {
+			.d-none {
+				display: none;
+			}
+		}
+		.menu-opener {
+			position: absolute;
+			left: 50%;
+			top: 10%;
+			margin-left: -250px;
+			z-index: 1;
+			margin-top: 50px;
+			width: 500px;
+			background: rgba(0,0,0,0.8);
+			border-radius: 10px;
+			padding: 10px 20px;
+			.menu {
+				display: flex;
+				flex-direction: column;
+				margin-top: 20px;
+				.menu__item {
+					padding-top: 10px;
+					padding-bottom: 5px;
+					border-bottom: 2px solid $col_10; 
+					a {
+						color: $col_4;
+						&:after {
+							border-bottom: none;
+						}
+						&:hover {
+							color: $clmh;
+							width: 0%;
+							&:after {
+								border-bottom: none;
+							}
+						}
+					}
+				}
+			}
+		}
+		.nav {
+			& i {
+				font-size: 12px;
+			}
+			align-items: center;
+			justify-content: center;
+			.logo {
+				width: 200px;
+				padding-top: 0;
+				& img {
+					width: 150px;
+				}
+				&:after {
+					border-bottom: none;
+				}
+			}
+			.number,
+			.city-name {
+				display: none;
+			}
+			.nav-tel {
+				margin-top: 20px;
+				margin-right: 20px;
+			}
+			.nav-city {
+				margin-top: 20px;
+				order: 1;
+				margin-right: 20px;
+			}
+			.nav-tel,.nav-city {
+				width: 44px;
+				height: 44px;
+			}
+			.menu-open  {
+				display: block;
+				margin-top: 26px;
+				order: 1;
+				& span {
+					width: 40px;
+					height: 5px;
+					display: block;
+					background: $col_10;
+					margin-bottom: 7px;
+					transition: all 0.3s ease;
+					cursor: pointer;
+				}
+				&:focus {
+					& span:nth-child(1) {
+						transform: rotate(-230deg);
+					}
+					& span:nth-child(2) {
+						transform: rotate(-230deg);
+						margin-top: -12px;
+					}
+					& span:nth-child(3) {
+						margin-top: -12px;
+						transform: rotate(230deg);
+					}
+				}
+			}
+		}
+		.header__screen {
+			.offer {
+				width: 100%;
+			}
+			& .offer h1 {
+				font-size: 35px;
+			}
+		}
+	}
+
+	.about {
+		.about__wrap {
+			margin-left: 0;
+			.about__link {
+				bottom: -50px;
+				flex-direction: row;
+				left: 0;
+				a {
+					margin-right: 20px;
+					margin-top: 0;
+				}
+			}
+		}
+	}
+
+	.about-store .about-store__wrap .about-store__item {
+		width: 33.3%;
+	}
+
+	.about-store .about-store__wrap .about-store__item p {
+		font-size: 17px;
+		line-height: 1.3em;
+	}
+
+	.orthopedic {
+		.orthopedic__wrapper {
+			.orthopedic__images {
+				margin: 0 auto 60px;
+				width: 500px;
+				.img__item {
+					margin-right: 10px;
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.shoes .shoes-right-bg {
+		top: 4%;
+	}
+
+	.corsets {
+		.carset-bg {
+			left: 37%;
+		}
+		.container-fluid {
+			margin: 0 auto;
+			.corsets__wrapper {
+				.corsets__images {
+					margin: 0 auto 60px;
+					width: 500px;
+					.corsets-img__item {
+						img {
+							width: 100%;
+						}
+					}
+				}
+			}	
+		}
+	}
+
+	.contacts .contact__block {
+		width: 400px;
+		height: 450px;
+		padding: 25px 20px 14px 19px;
+		top: 40%;
+		p,
+		.contact__phone,
+		.contact__mail {
+			margin-bottom: 15px;
+		}
+		.contact__soc h3 {
+			margin-bottom: 25px;
+		}
+	}
+
+	.footer__menu {
+		flex-direction: column;
+		li:nth-child(1) {
+			order: 1;
+		}
+		li:nth-child(2) {
+			order: 2;
+		}
+		.menu__item {
+			margin-bottom: 10px;
+		}
+	}
+
+}
+
+
+@media only screen and (max-width : 576px) {
+	.container, 
+	.container-fluid {
+		width: 300px;
+	}
+
+	.header {
+		.nav {
+			.nav-tel {
+				margin-right: 10px;
+			}
+			.nav-city {
+				margin-right: 10px;
+			}
+			.logo {
+				width: 130px;
+				margin-right: 30px;
+				img {
+					width: 120px;
+				}
+			}
+		}
+		.header__screen {
+			.offer {
+				h1 {
+					font-size: 23px;
+				}
+			}
+		} 
+	}
+
+	.about .title h2:after {
+		top: 48px;
+	}
+
+	.about .about__text {
+		width: 100%;
+	}
+
+	.about-store .about-store__wrap {
+		flex-direction: column;
+	}
+
+	.about-store .about-store__wrap .about-store__item {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.orthopedic .orthopedic__wrapper .orthopedic__images {
+		width: 100%;
+	}
+
+	.orthopedic {
+		margin-right: 0;
+	}
+
+	.orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__text {
+		width: 100%;
+	}
+
+	.orthopedic .orthopedic__wrapper .orthopedic__wrap {
+		margin-right: 0;
+	}
+
+	.orthopedic .orthopedic__wrapper .orthopedic__wrap .title h2:after {
+		top: 40px;
+	}
+
+	.orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__text {
+		width: 300px;
+	}
+
+	.orthopedic .orto-bg {
+		width: 64%;
+	}
+
+	.prevention .prevention__wrapper .evminova-img {
+		width: 100%;
+	}
+
+	.pillows .pillows__wrapper .pillows__wrap .title p, .corsets .corsets__wrapper .corsets__wrap .title p, .shoes .shoes__wrapper .shoes__wrap .title p, .prevention .prevention__wrapper .prevention__wrap .title p, .orthopedic .orthopedic__wrapper .orthopedic__wrap .title p, .about .title p {
+		font-size: 18px;
+	}
+
+	.pillows .pillows__wrapper .pillows__wrap .title h2, .corsets .corsets__wrapper .corsets__wrap .title h2, .shoes .shoes__wrapper .shoes__wrap .title h2, .prevention .prevention__wrapper .prevention__wrap .title h2, .orthopedic .orthopedic__wrapper .orthopedic__wrap .title h2, .about .title h2 {
+		font-size: 23px;
+	}
+
+	.prevention .prevention__wrapper .prevention__wrap .prevention__text {
+		width: 300px;
+	}
+
+	.prevention .prevention__wrapper .prevention__wrap .prevention__text p {
+		margin-bottom: 20px;
+	}
+
+	.prevention .prevention__wrapper .prevention__wrap .title h2:after {
+		top: 47px;
+	}
+
+	.shoes__wrap {
+		width: 300px;
+	}
+
+	.shoes .shoes__wrapper .shoes__wrap .shoes__text {
+		width: 300px;
+	}
+
+	.shoes .shoes__wrapper .shoes__wrap {
+		margin-right: 0;
+	}
+
+	.shoes .shoes__wrapper .shoes__wrap .title h2:after {
+		top: 50px;
+	}
+
+	.corsets .container-fluid .corsets__wrapper .corsets__images {
+		width: 300px;
+		flex-direction: column;
+	}
+
+	.corsets .corsets__wrapper .corsets__images .corsets-img__item p {
+		font-size: 25px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.corsets .corsets__wrapper .corsets__wrap .corsets__text {
+		width: 300px;
+	}
+
+	.corsets .carset-bg {
+		display: none;
+	}
+
+	.pillows .pallows-right_bg {
+		right: 10%;
+	}
+
+	.pillows .pillows__wrapper .pillows__wrap .pallow-woman__second {
+		width: 100%;
+		height: 250px;
+		margin-left: 0;
+	}
+	
+	.pillows .pillows__wrapper .pillows__wrap {
+		margin: 0 auto;
+	}
+
+	.pillows .pillows__wrapper .pillows__wrap .pillows__text {
+		width: 300px;
+	}
+
+	.pillows .pillows__wrapper .pillows__wrap .pallow-woman__second
+
+	.pillows .pillows__wrapper .pillows__wrap .title h2:after {
+		top: 48px;
+	}
+
+	.contacts .contact__block {
+		width: 300px;
+		height: 400px;
+		left: 50%;
+		margin-left: -150px;
+	}
+
+	.contacts .contact__block h3 {
+		margin-bottom: 20px;
+	}
+
+	.contacts .contact__block p, .contacts .contact__block .contact__phone, .contacts .contact__block .contact__mail {
+		font-size: 15px;
+	}
+
+	.contacts .contact__block .contact__phone a {
+		font-size: 19px;
+	}
+
+	.contacts .contact__block .contact__site {
+		margin-bottom: 40px;
+	}
+
+	.pillow_hd, .boots__hd, .about_bg, .shoes-img {
+		width: 45%;
+	}
+
+	.header .menu-opener {
+		width: 300px;
+		left: 50%;
+		margin-left: -150px;
+		text-align: center;
+	}
+
+}

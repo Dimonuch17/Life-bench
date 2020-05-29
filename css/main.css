@@ -1,0 +1,1505 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url("../fonts/ProximaNova/ProximaNova-Regular/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Regular/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova/ProximaNova-Regular/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+}
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("../fonts/ProximaNova/ProximaNova-Bold/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Bold/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Bold/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Bold/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova/ProximaNova-Bold/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+}
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 20px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: "Proxima Nova Bold";
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/*--------------------*/
+.container {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.container-fluid {
+  margin-left: auto;
+  width: 1500px;
+}
+
+.footer .footer__desc .footer__text, .pillows .pillows__wrapper .pillows__wrap .pillows__text p, .pillows .pillows__wrapper .pillows__wrap .pillows__text ul > li, .corsets .corsets__wrapper .corsets__wrap .corsets__text p, .shoes .shoes__wrapper .shoes__wrap .shoes__text p, .prevention .prevention__wrapper .prevention__wrap .prevention__text p, .orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__text p, .header__screen .offer p, .pillows .pillows__wrapper .pillows__wrap .title p, .corsets .corsets__wrapper .corsets__wrap .title p, .shoes .shoes__wrapper .shoes__wrap .title p, .prevention .prevention__wrapper .prevention__wrap .title p, .orthopedic .orthopedic__wrapper .orthopedic__wrap .title p, .about .title p {
+  font-family: "Proxima Nova Regular";
+}
+
+.footer .footer__desc > p, .footer .footer__nav .footer__menu a, .contacts .contact__block h3, .corsets .corsets__wrapper .corsets__images .corsets-img__item p, .orthopedic .orthopedic__wrapper .orthopedic__images .img__item p, .nav-menu .menu a, .nav, .pillows .pillows__wrapper .pillows__wrap .pillows__btn, .corsets .corsets__wrapper .corsets__wrap .corsets__btn, .shoes .shoes__wrapper .shoes__wrap .shoes__btn, .prevention .prevention__wrapper .prevention__wrap .prevention__btn, .orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__btn {
+  font-family: "Proxima Nova Bold";
+}
+
+.footer .footer__desc, .pillows .pillows__wrapper .pillows__wrap .pillows__text p, .pillows .pillows__wrapper .pillows__wrap .pillows__text ul > li, .corsets .corsets__wrapper .corsets__wrap .corsets__text p, .shoes .shoes__wrapper .shoes__wrap .shoes__text p, .prevention .prevention__wrapper .prevention__wrap .prevention__text p, .orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__text p, .about-store .about-store__wrap .about-store__item p, .about .about__text p {
+  line-height: 1.6em;
+}
+
+.shoes .shoes__wrapper, .prevention .prevention__wrapper, .orthopedic .orthopedic__wrapper .orthopedic__images, .about-store .about-store__wrap, .nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__screen .offer p:after, .pillows .pillows__wrapper .pillows__wrap .title h2:after, .corsets .corsets__wrapper .corsets__wrap .title h2:after, .shoes .shoes__wrapper .shoes__wrap .title h2:after, .prevention .prevention__wrapper .prevention__wrap .title h2:after, .orthopedic .orthopedic__wrapper .orthopedic__wrap .title h2:after, .about .title h2:after {
+  content: " ";
+  display: block;
+  width: 105px;
+  height: 32px;
+  background: #f7bf66;
+  position: absolute;
+  left: -23px;
+  top: 20px;
+  z-index: -1;
+}
+
+.header__screen .offer p, .pillows .pillows__wrapper .pillows__wrap .title, .corsets .corsets__wrapper .corsets__wrap .title, .shoes .shoes__wrapper .shoes__wrap .title, .prevention .prevention__wrapper .prevention__wrap .title, .orthopedic .orthopedic__wrapper .orthopedic__wrap .title, .about .title {
+  position: relative;
+  z-index: 1;
+}
+
+.pillows .pillows__wrapper .pillows__wrap .title p, .corsets .corsets__wrapper .corsets__wrap .title p, .shoes .shoes__wrapper .shoes__wrap .title p, .prevention .prevention__wrapper .prevention__wrap .title p, .orthopedic .orthopedic__wrapper .orthopedic__wrap .title p, .about .title p {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: #b3d0d0;
+}
+.pillows .pillows__wrapper .pillows__wrap .title h2, .corsets .corsets__wrapper .corsets__wrap .title h2, .shoes .shoes__wrapper .shoes__wrap .title h2, .prevention .prevention__wrapper .prevention__wrap .title h2, .orthopedic .orthopedic__wrapper .orthopedic__wrap .title h2, .about .title h2 {
+  margin-top: 20px;
+  font-size: 36px;
+}
+.pillows .pillows__wrapper .pillows__wrap .title h2:after, .corsets .corsets__wrapper .corsets__wrap .title h2:after, .shoes .shoes__wrapper .shoes__wrap .title h2:after, .prevention .prevention__wrapper .prevention__wrap .title h2:after, .orthopedic .orthopedic__wrapper .orthopedic__wrap .title h2:after, .about .title h2:after {
+  left: 0px;
+  top: 56px;
+}
+
+.pillows .pillows__wrapper .pillows__wrap .pillows__btn, .corsets .corsets__wrapper .corsets__wrap .corsets__btn, .shoes .shoes__wrapper .shoes__wrap .shoes__btn, .prevention .prevention__wrapper .prevention__wrap .prevention__btn, .orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__btn {
+  width: 210px;
+  height: 68px;
+  color: #fff;
+  background: #e05d5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+.pillows .pillows__wrapper .pillows__wrap .pillows__btn i, .corsets .corsets__wrapper .corsets__wrap .corsets__btn i, .shoes .shoes__wrapper .shoes__wrap .shoes__btn i, .prevention .prevention__wrapper .prevention__wrap .prevention__btn i, .orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__btn i {
+  padding-left: 30px;
+}
+.pillows .pillows__wrapper .pillows__wrap .pillows__btn:hover, .corsets .corsets__wrapper .corsets__wrap .corsets__btn:hover, .shoes .shoes__wrapper .shoes__wrap .shoes__btn:hover, .prevention .prevention__wrapper .prevention__wrap .prevention__btn:hover, .orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__btn:hover {
+  background: #e23433;
+  border-radius: 5px;
+}
+
+.nav .nav-tel, .nav .nav-city {
+  width: 458px;
+  height: 115px;
+  color: #fff;
+}
+
+.menu-open {
+  display: none;
+}
+
+.animate__animated {
+  opacity: 0;
+}
+
+.animate__delay_02s {
+  animation-delay: 0.2s;
+}
+
+.animate__delay_03s {
+  animation-delay: 0.3s;
+}
+
+.animate__delay_04s {
+  animation-delay: 0.4s;
+}
+
+/* ----- First screen ----- */
+.nav {
+  font-size: 18px;
+  letter-spacing: 0.2em;
+}
+.nav .nav-city {
+  background: #f7bf66;
+  display: flex;
+}
+.nav .nav-city .nav-city__desc {
+  display: flex;
+  align-items: center;
+}
+.nav .nav-city .nav-city__desc i {
+  color: #fbedd6;
+  padding: 0 67px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.nav .nav-city .nav-city__desc i:hover {
+  color: #fff;
+}
+.nav .nav-city .nav-city__desc p {
+  font-size: 18px;
+  line-height: 2.5em;
+}
+.nav .logo {
+  padding-top: 10px;
+}
+.nav .nav-tel {
+  background: #e05d5c;
+  display: flex;
+}
+.nav .nav-tel .nav-tel__desc {
+  display: flex;
+  align-items: center;
+}
+.nav .nav-tel .nav-tel__desc i {
+  color: #f4aaa9;
+  padding: 0 67px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.nav .nav-tel .nav-tel__desc i:hover {
+  color: #fff;
+}
+.nav .number {
+  display: flex;
+  flex-direction: column;
+}
+.nav .number a {
+  padding: 4px 0;
+  border-bottom: 1px dotted transparent;
+  transition: all 0.3s ease;
+}
+.nav .number a:hover {
+  color: #e2e2e2;
+}
+
+.nav-menu {
+  width: 550px;
+  margin: 0 auto;
+  border-top: 1px solid #e4e4e4;
+}
+.nav-menu .menu {
+  margin: 38px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-menu .menu a {
+  color: #03a7a6;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  transition: all 0.3s ease;
+}
+.nav-menu .menu a:after {
+  content: " ";
+  width: 0%;
+  border-bottom: 2px solid #39cccb;
+  padding-bottom: 3px;
+  display: block;
+  transition: all 0.3s ease;
+}
+.nav-menu .menu a:hover {
+  color: #39cccb;
+  width: 100%;
+}
+.nav-menu .menu a:hover:after {
+  width: 100%;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid #39cccb;
+}
+
+.header__screen {
+  position: relative;
+  background: url("../img/bg_header.webp") no-repeat fixed center top/cover;
+}
+.header__screen .boots__hd {
+  position: absolute;
+  left: 2%;
+  top: 25%;
+}
+.header__screen .pillow_hd {
+  position: absolute;
+  top: 30%;
+  right: 4%;
+}
+.header__screen .offer {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 130px;
+  padding-bottom: 53px;
+}
+.header__screen .offer h1 {
+  font-size: 50px;
+  line-height: 1.4em;
+}
+.header__screen .offer p {
+  font-size: 40px;
+  margin-top: 108px;
+  margin-left: 27px;
+}
+.header__screen .offer a > i {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  color: red;
+  margin-top: 140px;
+}
+
+/* ----- Second screen ----- */
+.about {
+  position: relative;
+  padding-top: 190px;
+  padding-bottom: 182px;
+}
+.about .about_bg {
+  position: absolute;
+  top: 22%;
+  right: 0;
+}
+.about .about__wrap {
+  position: relative;
+}
+.about .about__text {
+  margin-top: 65px;
+  width: 670px;
+}
+.about .about__text p {
+  margin-bottom: 38px;
+}
+.about .about__link {
+  position: absolute;
+  bottom: 0;
+  left: -120px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.about .about__link a {
+  color: #e05d5c;
+  font-size: 26px;
+  margin-top: 36px;
+}
+
+/* ----- Third screen ----- */
+.about-store {
+  background: #5ec8c6;
+  padding: 75px 0;
+}
+.about-store .about-store__wrap .about-store__item {
+  width: 25.641025641%;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-store .about-store__wrap .about-store__item img {
+  margin-bottom: 28px;
+}
+.about-store .about-store__wrap .about-store__item p {
+  color: #fff;
+}
+
+/* ----- Fourth screen ----- */
+.orthopedic {
+  margin-right: 20px;
+  position: relative;
+  padding: 280px 0;
+}
+.orthopedic .orto-bg {
+  position: absolute;
+  left: 0;
+  top: 35%;
+}
+.orthopedic .orthopedic__wrapper {
+  display: flex;
+}
+.orthopedic .orthopedic__wrapper .orthopedic__wrap {
+  margin-right: 10px;
+}
+.orthopedic .orthopedic__wrapper .orthopedic__wrap .title h2:after {
+  top: 60px;
+}
+.orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__text {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  width: 370px;
+}
+.orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__text p {
+  color: #000;
+  margin-bottom: 40px;
+}
+.orthopedic .orthopedic__wrapper .orthopedic__images {
+  width: 1060px;
+}
+.orthopedic .orthopedic__wrapper .orthopedic__images .img__item {
+  -margin: 0 20px;
+}
+.orthopedic .orthopedic__wrapper .orthopedic__images .img__item p {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+/* ----- Fifth screen ----- */
+.prevention {
+  padding-top: 160px;
+  padding-bottom: 200px;
+  position: relative;
+}
+.prevention .prevention-img__left {
+  position: absolute;
+  left: 0;
+  top: 15%;
+  z-index: -1;
+}
+.prevention .prevention__wrapper {
+  align-items: center;
+}
+.prevention .prevention__wrapper .evminova-img {
+  width: 624;
+  height: 414px;
+  display: block;
+  z-index: 1;
+}
+.prevention .prevention__wrapper .prevention__wrap {
+  margin-right: 10px;
+}
+.prevention .prevention__wrapper .prevention__wrap .title h2:after {
+  top: 60px;
+}
+.prevention .prevention__wrapper .prevention__wrap .prevention__text {
+  margin-top: 75px;
+  margin-bottom: 80px;
+  width: 475px;
+}
+.prevention .prevention__wrapper .prevention__wrap .prevention__text p {
+  color: #000;
+  margin-bottom: 35px;
+}
+.prevention .prophy_bg {
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+
+/* ----- Sixth screen ----- */
+.shoes {
+  position: relative;
+  padding: 200px 0;
+}
+.shoes .shoes-left-bg {
+  position: absolute;
+  left: 0;
+  top: 20%;
+}
+.shoes .shoes-right-bg {
+  position: absolute;
+  right: 0;
+  top: 21%;
+  z-index: -1;
+}
+.shoes .shoes__wrapper {
+  align-items: center;
+}
+.shoes .shoes__wrapper .shoes__wrap {
+  margin-right: 10px;
+}
+.shoes .shoes__wrapper .shoes__wrap .title h2:after {
+  top: 60px;
+}
+.shoes .shoes__wrapper .shoes__wrap .shoes__text {
+  margin-top: 75px;
+  width: 460px;
+  margin-bottom: 120px;
+}
+.shoes .shoes__wrapper .shoes__wrap .shoes__text p {
+  color: #000;
+}
+.shoes .shoes__wrapper .shoes__wrap .shoes__text .shoes__text_fsome {
+  margin-top: 40px;
+}
+.shoes .shoes__wrapper .shoes__wrap .shoes__text .shoes__text_fsome p > i {
+  color: #0daba9;
+  padding-right: 18px;
+}
+.shoes .shoes__wrapper .shoes-img {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/* ----- Seventh screen ----- */
+.corsets {
+  position: relative;
+  padding: 200px 0;
+}
+.corsets .carset-bg {
+  position: absolute;
+  top: 25%;
+  left: 0;
+}
+.corsets .corsets__wrapper {
+  display: flex;
+}
+.corsets .corsets__wrapper .corsets__wrap .title h2 {
+  line-height: 1.4em;
+}
+.corsets .corsets__wrapper .corsets__wrap .title h2:after {
+  top: 67px;
+}
+.corsets .corsets__wrapper .corsets__wrap .corsets__text {
+  width: 410px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+.corsets .corsets__wrapper .corsets__wrap .corsets__text p {
+  color: #000;
+}
+.corsets .corsets__wrapper .corsets__wrap .corsets__text .corsets__text_fsome {
+  margin-top: 35px;
+}
+.corsets .corsets__wrapper .corsets__wrap .corsets__text .corsets__text_fsome p > i {
+  color: #0daba9;
+  padding-right: 18px;
+}
+.corsets .corsets__wrapper .corsets__images {
+  display: flex;
+  align-items: center;
+}
+.corsets .corsets__wrapper .corsets__images .corsets-img__item {
+  margin-right: 42px;
+}
+.corsets .corsets__wrapper .corsets__images .corsets-img__item p {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+/* ----- Eighth  screen ----- */
+.pillows {
+  position: relative;
+  padding: 200px 0;
+}
+.pillows .pallows-left_bg {
+  position: absolute;
+  left: 0;
+  top: 13%;
+  z-index: -1;
+}
+.pillows .pallows-right_bg {
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+.pillows .pillows__wrapper {
+  display: flex;
+}
+.pillows .pillows__wrapper .pallow-woman__firts {
+  z-index: 1;
+  width: 601px;
+  height: 601px;
+  margin-top: 210px;
+}
+.pillows .pillows__wrapper .pillows__wrap {
+  margin-left: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+.pillows .pillows__wrapper .pillows__wrap .title {
+  margin-bottom: 110px;
+}
+.pillows .pillows__wrapper .pillows__wrap .title h2:after {
+  top: 60px;
+}
+.pillows .pillows__wrapper .pillows__wrap .pallow-woman__second {
+  width: 530px;
+  height: 430px;
+  margin-left: -10%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.pillows .pillows__wrapper .pillows__wrap .pillows__text {
+  margin-top: 40px;
+  width: 555px;
+}
+.pillows .pillows__wrapper .pillows__wrap .pillows__text p, .pillows .pillows__wrapper .pillows__wrap .pillows__text ul > li {
+  color: #000;
+}
+.pillows .pillows__wrapper .pillows__wrap .pillows__text .pillows__list {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.pillows .pillows__wrapper .pillows__wrap .pillows__text .pillows__list i {
+  color: #0daba9;
+  padding-right: 18px;
+}
+/* ----- Ninth screen ----- */
+.contacts {
+  position: relative;
+}
+.contacts #map {
+  width: 100%;
+  height: 700px;
+  z-index: -1;
+}
+.contacts .contact__block {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  right: 10%;
+  top: 12%;
+  width: 550px;
+  height: 578px;
+  border-radius: 3px;
+  background: #d9f1f1;
+  z-index: 999;
+  padding: 46px 64px 33px 64px;
+}
+.contacts .contact__block i {
+  color: #e05d5c;
+  margin-right: 35px;
+}
+.contacts .contact__block h3 {
+  color: #3d3d3d;
+  font-size: 24px;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-bottom: 35px;
+}
+.contacts .contact__block p {
+  color: #3d3d3d;
+  margin-bottom: 35px;
+}
+.contacts .contact__block a {
+  color: #3d3d3d;
+}
+.contacts .contact__block .contact__phone__wrap {
+  display: flex;
+}
+.contacts .contact__block .contact__phone__wrap i {
+  padding-top: 20px;
+}
+.contacts .contact__block .contact__phone {
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.contacts .contact__block .contact__phone a {
+  font-size: 24px;
+  letter-spacing: 0.2em;
+}
+.contacts .contact__block .contact__mail {
+  margin-bottom: 35px;
+}
+.contacts .contact__block .contact__site {
+  margin-bottom: 65px;
+}
+.contacts .contact__block .contact__soc {
+  font-size: 26px;
+}
+.contacts .contact__block .contact__soc h3 {
+  margin-bottom: 40px;
+}
+
+/* ----- Footer screen ----- */
+.footer {
+  padding: 50px 0;
+}
+.footer .footer__nav .footer__menu {
+  margin: 38px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer .footer__nav .footer__menu a {
+  color: #03a7a6;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  transition: all 0.3s ease;
+}
+.footer .footer__nav .footer__menu a:after {
+  content: " ";
+  width: 0%;
+  border-bottom: 2px solid #39cccb;
+  padding-bottom: 3px;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer .footer__nav .footer__menu a:hover {
+  color: #39cccb;
+  width: 100%;
+}
+.footer .footer__nav .footer__menu a:hover:after {
+  width: 100%;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid #39cccb;
+}
+.footer .footer__desc {
+  text-align: center;
+  margin: 0 auto;
+  width: 755px;
+  letter-spacing: 0;
+}
+.footer .footer__desc .footer__text {
+  margin-top: 15px;
+  font-size: 16px;
+  padding-bottom: 35px;
+  border-bottom: 2px solid #e4e4e4;
+}
+.footer .footer__desc .footer__credits {
+  padding-top: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+/* ------- Button UP ------- */
+#toTop {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  color: #e05d5c;
+  font-size: 20px;
+  box-shadow: 0 4px 10px #00000070;
+  border: 2px solid #e05d5c;
+  text-align: center;
+  padding-top: 20px;
+  position: fixed;
+  bottom: 40px;
+  /* отступ кнопки от нижнего края страницы*/
+  right: 40px;
+  cursor: pointer;
+  display: none;
+  font-family: verdana;
+}
+
+/* ------- Animated ------- */
+@keyframes bouncing {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 15px;
+  }
+}
+.arrow {
+  animation: bouncing 0.5s infinite alternate;
+  cursor: pointer;
+  position: relative;
+}
+
+@media only screen and (max-width: 1550px) {
+  .nav {
+    font-size: 16px;
+  }
+  .nav .nav .nav-city .nav-city__desc p {
+    line-height: 2em;
+  }
+  .nav .nav .nav-tel, .nav .nav .nav-city {
+    width: 400px;
+  }
+  .nav .nav-menu {
+    border-top: none;
+  }
+
+  .logo {
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+    width: 300px;
+  }
+
+  .pillow_hd,
+.boots__hd,
+.about_bg,
+.shoes-img {
+    width: 35%;
+  }
+
+  .about .about__wrap {
+    margin-left: 130px;
+  }
+
+  .prevention .prevention-img__left {
+    top: 16%;
+  }
+
+  .prevention .prevention__wrapper .evminova-img {
+    width: 500px;
+    height: 100%;
+  }
+
+  .shoes .shoes__wrapper, .prevention .prevention__wrapper, .orthopedic .orthopedic__wrapper .orthopedic__images, .about-store .about-store__wrap, .nav {
+    justify-content: space-between;
+  }
+
+  .prevention {
+    padding-bottom: 100px;
+  }
+
+  .shoes,
+.pillows,
+.orthopedic,
+.corsets {
+    padding: 100px 0;
+  }
+
+  .shoes .shoes-right-bg {
+    top: 13%;
+  }
+
+  .pillows .pallows-left_bg {
+    top: 19%;
+  }
+
+  .pallows-left_bg {
+    width: 50%;
+  }
+
+  .img__item img {
+    width: 200px;
+  }
+
+  .orthopedic .orthopedic__wrapper .orthopedic__images {
+    width: 700px;
+  }
+
+  .orthopedic .orthopedic__wrapper .orthopedic__images .img__item p {
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+  .orthopedic .orthopedic__wrapper {
+    align-items: center;
+  }
+
+  .container-fluid {
+    width: 1150px;
+  }
+
+  .pillows .pillows__wrapper .pallow-woman__firts {
+    width: 500px;
+    height: 500px;
+  }
+
+  .pillows .pillows__wrapper .pillows__wrap .pallow-woman__second {
+    width: 430px;
+    height: 330px;
+    margin-left: -10%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .pillows .pillows__wrapper {
+    justify-content: space-around;
+  }
+
+  .corsets-img__item img {
+    width: 200px;
+  }
+
+  .corsets .corsets__wrapper .corsets__images .corsets-img__item p {
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+  .contacts .contact__block {
+    right: 5%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container,
+.container-fluid {
+    width: 970px;
+  }
+
+  .header__screen .offer h1 {
+    font-size: 43px;
+    line-height: 1.3em;
+  }
+
+  .header__screen .boots__hd {
+    position: absolute;
+    left: 0%;
+    top: 29%;
+  }
+
+  .about {
+    padding: 100px 0;
+  }
+
+  .img__item img,
+.corsets-img__item img {
+    width: 160px;
+  }
+
+  .orthopedic .orthopedic__wrapper .orthopedic__images .img__item p,
+.corsets .corsets__wrapper .corsets__images .corsets-img__item p {
+    font-size: 17px;
+    margin-top: 20px;
+  }
+
+  .pillows .pillows__wrapper .pillows__wrap .title p, .corsets .corsets__wrapper .corsets__wrap .title p, .shoes .shoes__wrapper .shoes__wrap .title p, .prevention .prevention__wrapper .prevention__wrap .title p, .orthopedic .orthopedic__wrapper .orthopedic__wrap .title p, .about .title p {
+    font-size: 22px;
+  }
+
+  .pillows .pillows__wrapper .pillows__wrap .title h2, .corsets .corsets__wrapper .corsets__wrap .title h2, .shoes .shoes__wrapper .shoes__wrap .title h2, .prevention .prevention__wrapper .prevention__wrap .title h2, .orthopedic .orthopedic__wrapper .orthopedic__wrap .title h2, .about .title h2 {
+    font-size: 34px;
+  }
+
+  .orthopedic .orthopedic__wrapper .orthopedic__images {
+    width: 500px;
+  }
+
+  .orthopedic__wrapper {
+    justify-content: center;
+  }
+
+  .prevention .prevention__wrapper .evminova-img {
+    width: 450px;
+  }
+
+  .shoes .shoes__wrapper {
+    justify-content: center;
+  }
+
+  .shoes-img {
+    width: 40%;
+  }
+
+  .corsets .corsets__wrapper .corsets__images .corsets-img__item {
+    margin-right: 15px;
+  }
+
+  .pillows .pillows__wrapper .pallow-woman__firts {
+    width: 400px;
+    height: 400px;
+  }
+
+  .pillows .pillows__wrapper .pillows__wrap .pillows__text {
+    width: 500px;
+  }
+
+  .pallows-left_bg {
+    width: 55%;
+  }
+
+  .contacts .contact__block {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container,
+.container-fluid {
+    width: 720px;
+  }
+
+  .nav .nav-tel, .nav .nav-city {
+    width: 33.3%;
+  }
+
+  .nav .nav-city .nav-city__desc p {
+    line-height: 1.4em;
+  }
+
+  .nav .nav-city .nav-city__desc i,
+.nav .nav-tel .nav-tel__desc i {
+    padding: 0 15px;
+  }
+
+  .nav {
+    font-size: 14px;
+  }
+
+  .logo {
+    border-bottom: none;
+  }
+  .logo:after {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #e4e4e4;
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .header__screen .pillow_hd,
+.header__screen .boots__hd {
+    top: 38%;
+  }
+
+  .about .about__text {
+    width: 450px;
+  }
+
+  .about-store .about-store__wrap .about-store__item p {
+    font-size: 18px;
+    line-height: 1.4em;
+  }
+
+  .orthopedic__wrapper,
+.prevention__wrapper,
+.shoes__wrapper,
+.corsets__wrapper {
+    flex-direction: column;
+  }
+
+  .orthopedic__wrap {
+    order: 1;
+  }
+
+  .img__item img, .corsets-img__item img {
+    width: 200px;
+  }
+
+  .orthopedic .orthopedic__wrapper .orthopedic__images {
+    width: 650px;
+  }
+
+  .orthopedic .orto-bg {
+    top: 50%;
+  }
+
+  .orthopedic__images {
+    margin-bottom: 60px;
+  }
+
+  .orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__text {
+    margin-top: 45px;
+  }
+
+  .orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__text p {
+    margin-bottom: 30px;
+  }
+
+  .orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__btn {
+    margin-top: 50px;
+  }
+
+  .prevention,
+.shoes {
+    padding: 50px 0;
+  }
+
+  .prevention .prevention-img__left {
+    top: 10%;
+  }
+
+  .prevention-img__left {
+    display: none;
+  }
+
+  .prevention .prevention__wrapper .evminova-img {
+    width: 500px;
+    margin-bottom: 60px;
+  }
+
+  .prevention .prevention__wrapper .prevention__wrap {
+    margin-right: 0;
+  }
+
+  .prevention .prevention__wrapper .prevention__wrap .prevention__text {
+    margin: 50px 0;
+  }
+
+  .shoes__wrap {
+    order: 1;
+  }
+
+  .shoes-img {
+    width: 50%;
+  }
+
+  .shoes-img {
+    margin-bottom: 60px;
+  }
+
+  .shoes-right-bg {
+    width: 60%;
+  }
+
+  .shoes .shoes__wrapper .shoes__wrap .shoes__text {
+    margin: 50px 0;
+  }
+
+  .prevention .prophy_bg {
+    top: 46%;
+  }
+
+  .shoes .shoes-left-bg {
+    top: 40%;
+  }
+
+  .corsets__wrap {
+    order: 1;
+  }
+
+  .corsets .corsets__wrapper .corsets__images {
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  .corsets .carset-bg {
+    top: 45%;
+    left: 50%;
+  }
+
+  .pallows-left_bg,
+.pallow-woman__firts {
+    display: none;
+  }
+
+  .pillows .pallows-right_bg {
+    top: 50%;
+  }
+
+  .footer .footer__desc {
+    width: 100%;
+  }
+
+  .footer__desc p {
+    font-size: 18px;
+  }
+
+  .footer .footer__desc {
+    line-height: 1.4em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container, .container-fluid {
+    width: 520px;
+  }
+
+  .header .container .d-none {
+    display: none;
+  }
+  .header .menu-opener {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    margin-left: -250px;
+    z-index: 1;
+    margin-top: 50px;
+    width: 500px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+  .header .menu-opener .menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .header .menu-opener .menu .menu__item {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #b1b1b1;
+  }
+  .header .menu-opener .menu .menu__item a {
+    color: #fff;
+  }
+  .header .menu-opener .menu .menu__item a:after {
+    border-bottom: none;
+  }
+  .header .menu-opener .menu .menu__item a:hover {
+    color: #39cccb;
+    width: 0%;
+  }
+  .header .menu-opener .menu .menu__item a:hover:after {
+    border-bottom: none;
+  }
+  .header .nav {
+    align-items: center;
+    justify-content: center;
+  }
+  .header .nav i {
+    font-size: 12px;
+  }
+  .header .nav .logo {
+    width: 200px;
+    padding-top: 0;
+  }
+  .header .nav .logo img {
+    width: 150px;
+  }
+  .header .nav .logo:after {
+    border-bottom: none;
+  }
+  .header .nav .number,
+.header .nav .city-name {
+    display: none;
+  }
+  .header .nav .nav-tel {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .header .nav .nav-city {
+    margin-top: 20px;
+    order: 1;
+    margin-right: 20px;
+  }
+  .header .nav .nav-tel, .header .nav .nav-city {
+    width: 44px;
+    height: 44px;
+  }
+  .header .nav .menu-open {
+    display: block;
+    margin-top: 26px;
+    order: 1;
+  }
+  .header .nav .menu-open span {
+    width: 40px;
+    height: 5px;
+    display: block;
+    background: #b1b1b1;
+    margin-bottom: 7px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .header .nav .menu-open:focus span:nth-child(1) {
+    transform: rotate(-230deg);
+  }
+  .header .nav .menu-open:focus span:nth-child(2) {
+    transform: rotate(-230deg);
+    margin-top: -12px;
+  }
+  .header .nav .menu-open:focus span:nth-child(3) {
+    margin-top: -12px;
+    transform: rotate(230deg);
+  }
+  .header .header__screen .offer {
+    width: 100%;
+  }
+  .header .header__screen .offer h1 {
+    font-size: 35px;
+  }
+
+  .about .about__wrap {
+    margin-left: 0;
+  }
+  .about .about__wrap .about__link {
+    bottom: -50px;
+    flex-direction: row;
+    left: 0;
+  }
+  .about .about__wrap .about__link a {
+    margin-right: 20px;
+    margin-top: 0;
+  }
+
+  .about-store .about-store__wrap .about-store__item {
+    width: 33.3%;
+  }
+
+  .about-store .about-store__wrap .about-store__item p {
+    font-size: 17px;
+    line-height: 1.3em;
+  }
+
+  .orthopedic .orthopedic__wrapper .orthopedic__images {
+    margin: 0 auto 60px;
+    width: 500px;
+  }
+  .orthopedic .orthopedic__wrapper .orthopedic__images .img__item {
+    margin-right: 10px;
+  }
+  .orthopedic .orthopedic__wrapper .orthopedic__images .img__item img {
+    width: 100%;
+  }
+
+  .shoes .shoes-right-bg {
+    top: 4%;
+  }
+
+  .corsets .carset-bg {
+    left: 37%;
+  }
+  .corsets .container-fluid {
+    margin: 0 auto;
+  }
+  .corsets .container-fluid .corsets__wrapper .corsets__images {
+    margin: 0 auto 60px;
+    width: 500px;
+  }
+  .corsets .container-fluid .corsets__wrapper .corsets__images .corsets-img__item img {
+    width: 100%;
+  }
+
+  .contacts .contact__block {
+    width: 400px;
+    height: 450px;
+    padding: 25px 20px 14px 19px;
+    top: 40%;
+  }
+  .contacts .contact__block p,
+.contacts .contact__block .contact__phone,
+.contacts .contact__block .contact__mail {
+    margin-bottom: 15px;
+  }
+  .contacts .contact__block .contact__soc h3 {
+    margin-bottom: 25px;
+  }
+
+  .footer__menu {
+    flex-direction: column;
+  }
+  .footer__menu li:nth-child(1) {
+    order: 1;
+  }
+  .footer__menu li:nth-child(2) {
+    order: 2;
+  }
+  .footer__menu .menu__item {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container,
+.container-fluid {
+    width: 300px;
+  }
+
+  .header .nav .nav-tel {
+    margin-right: 10px;
+  }
+  .header .nav .nav-city {
+    margin-right: 10px;
+  }
+  .header .nav .logo {
+    width: 130px;
+    margin-right: 30px;
+  }
+  .header .nav .logo img {
+    width: 120px;
+  }
+  .header .header__screen .offer h1 {
+    font-size: 23px;
+  }
+
+  .about .title h2:after {
+    top: 48px;
+  }
+
+  .about .about__text {
+    width: 100%;
+  }
+
+  .about-store .about-store__wrap {
+    flex-direction: column;
+  }
+
+  .about-store .about-store__wrap .about-store__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .orthopedic .orthopedic__wrapper .orthopedic__images {
+    width: 100%;
+  }
+
+  .orthopedic {
+    margin-right: 0;
+  }
+
+  .orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__text {
+    width: 100%;
+  }
+
+  .orthopedic .orthopedic__wrapper .orthopedic__wrap {
+    margin-right: 0;
+  }
+
+  .orthopedic .orthopedic__wrapper .orthopedic__wrap .title h2:after {
+    top: 40px;
+  }
+
+  .orthopedic .orthopedic__wrapper .orthopedic__wrap .orthopedic__text {
+    width: 300px;
+  }
+
+  .orthopedic .orto-bg {
+    width: 64%;
+  }
+
+  .prevention .prevention__wrapper .evminova-img {
+    width: 100%;
+  }
+
+  .pillows .pillows__wrapper .pillows__wrap .title p, .corsets .corsets__wrapper .corsets__wrap .title p, .shoes .shoes__wrapper .shoes__wrap .title p, .prevention .prevention__wrapper .prevention__wrap .title p, .orthopedic .orthopedic__wrapper .orthopedic__wrap .title p, .about .title p {
+    font-size: 18px;
+  }
+
+  .pillows .pillows__wrapper .pillows__wrap .title h2, .corsets .corsets__wrapper .corsets__wrap .title h2, .shoes .shoes__wrapper .shoes__wrap .title h2, .prevention .prevention__wrapper .prevention__wrap .title h2, .orthopedic .orthopedic__wrapper .orthopedic__wrap .title h2, .about .title h2 {
+    font-size: 23px;
+  }
+
+  .prevention .prevention__wrapper .prevention__wrap .prevention__text {
+    width: 300px;
+  }
+
+  .prevention .prevention__wrapper .prevention__wrap .prevention__text p {
+    margin-bottom: 20px;
+  }
+
+  .prevention .prevention__wrapper .prevention__wrap .title h2:after {
+    top: 47px;
+  }
+
+  .shoes__wrap {
+    width: 300px;
+  }
+
+  .shoes .shoes__wrapper .shoes__wrap .shoes__text {
+    width: 300px;
+  }
+
+  .shoes .shoes__wrapper .shoes__wrap {
+    margin-right: 0;
+  }
+
+  .shoes .shoes__wrapper .shoes__wrap .title h2:after {
+    top: 50px;
+  }
+
+  .corsets .container-fluid .corsets__wrapper .corsets__images {
+    width: 300px;
+    flex-direction: column;
+  }
+
+  .corsets .corsets__wrapper .corsets__images .corsets-img__item p {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .corsets .corsets__wrapper .corsets__wrap .corsets__text {
+    width: 300px;
+  }
+
+  .corsets .carset-bg {
+    display: none;
+  }
+
+  .pillows .pallows-right_bg {
+    right: 10%;
+  }
+
+  .pillows .pillows__wrapper .pillows__wrap .pallow-woman__second {
+    width: 100%;
+    height: 250px;
+    margin-left: 0;
+  }
+
+  .pillows .pillows__wrapper .pillows__wrap {
+    margin: 0 auto;
+  }
+
+  .pillows .pillows__wrapper .pillows__wrap .pillows__text {
+    width: 300px;
+  }
+
+  .pillows .pillows__wrapper .pillows__wrap .pallow-woman__second .pillows .pillows__wrapper .pillows__wrap .title h2:after {
+    top: 48px;
+  }
+
+  .contacts .contact__block {
+    width: 300px;
+    height: 400px;
+    left: 50%;
+    margin-left: -150px;
+  }
+
+  .contacts .contact__block h3 {
+    margin-bottom: 20px;
+  }
+
+  .contacts .contact__block p, .contacts .contact__block .contact__phone, .contacts .contact__block .contact__mail {
+    font-size: 15px;
+  }
+
+  .contacts .contact__block .contact__phone a {
+    font-size: 19px;
+  }
+
+  .contacts .contact__block .contact__site {
+    margin-bottom: 40px;
+  }
+
+  .pillow_hd, .boots__hd, .about_bg, .shoes-img {
+    width: 45%;
+  }
+
+  .header .menu-opener {
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    text-align: center;
+  }
+}
